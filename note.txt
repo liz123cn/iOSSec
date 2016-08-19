@@ -43,7 +43,9 @@
 
 6、学会使用redsn0w来引导自己的代码，而不是redsn0w的越狱代码。
 
-7、两个位置
+7、三个位置
 	a)、llvm-gcc编译器的位置：/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin  （在这个位置下面并没有找到llvm-gcc编译器，苹果官方推荐使用clang指令来编译源代码）
 	b)、Xcode支持的iOS SDK：/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk
+	c)、一份完整的ARM体系结构参考手册：书中给出的路径不存在
 	开始创建源文件，并编译执行。
+
