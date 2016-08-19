@@ -42,3 +42,8 @@
 	不完美越狱是指设备重启时需要重新连接到计算机来重新引导到越狱状态。所有安装到不完美越狱设备中的应用会保持不变，但设备重启后它们不会运行起来，除非使用一个越狱软件来重启它，使得苹果的安全机制再次失效。
 
 6、学会使用redsn0w来引导自己的代码，而不是redsn0w的越狱代码。
+
+7、两个位置
+	a)、llvm-gcc编译器的位置：/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin  （在这个位置下面并没有找到llvm-gcc编译器，苹果官方推荐使用clang指令来编译源代码）
+	b)、Xcode支持的iOS SDK：/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk
+	开始创建源文件，并编译执行。
