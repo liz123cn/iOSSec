@@ -7,11 +7,11 @@
 	<string>com.s.hello</string>
 
 	<key>Program</key>
-	<string>~/hello</string>
+	<string>/usr/bin/hello</string>
 
-	<key>key</key>
+	<key>ProgramArguments</key>
 	<array>
-		<string>~/hello</string>
+		<string>/usr/bin/hello</string>
 	</array>
 
 	<key>SessionCreate</key>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>Listeners</key>
 		<dict>
-			<key>SockServiceName</key>
+			<key>SocketServiceName</key>
 			<string>7</string>
 		</dict>
 	</dict>
