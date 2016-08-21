@@ -7,11 +7,11 @@
 	<string>com.s.hello</string>
 
 	<key>Program</key>
-	<string>/usr/bin/hello</string>
+	<string>~/hello</string>
 
 	<key>key</key>
 	<array>
-		<string>/usr/bin/hello</string>
+		<string>~/hello</string>
 	</array>
 
 	<key>SessionCreate</key>
