@@ -12,7 +12,7 @@ int main() {
 	if (fd < 0)
 		exit -1;
 	while ((nr=read(fd, buf, sizeof(buf))) > 0) {
-		wirte(fileno(stdout), buf, nr);
+		write(fileno(stdout), buf, nr);
 	}
 	close(fd);
 }
