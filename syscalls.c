@@ -1,5 +1,3 @@
-.text
-
 .global _exit
 .global _fork
 .global _read
