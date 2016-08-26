@@ -1,14 +1,14 @@
-#include <fcntl.h>
+#include <sys/fcntl.h>
 #include <sys/stat.h>
 #include <sys/wait.h>
-#include "/usr/include/hfs/hfs_mount.h"
+#include <sys/mount.h>
 
-#define 0_RDONLY 0x0000
-#define 0_WRONLY 0x0001
-#define 0_RDWR   0x0002
-#define 0_CREAT  0x0200
-#define 0_TRUNC  0x0400
-#define 0_EXCL   0x0800
+#define O_RDONLY 0x0000
+#define O_WRONLY 0x0001
+#define O_RDWR   0x0002
+#define O_CREAT  0x0200
+#define O_TRUNC  0x0400
+#define O_EXCL   0x0800
 
 
 static int console;
@@ -33,7 +33,7 @@ void puts(const char* s) {
 
 /*挂载磁盘*/
 int hfs_mount (const char* device, const char* path, int options) {
-	struct hfs_mount_args args;
+	struct hfs_mount_args args;  //struct hfs_mount_args args  
 	args.fspec = device;
 	return mount("hfs", path, options, &args);
 }
@@ -53,7 +53,7 @@ int fsexec(char* argv[], char* env[], int pause) {
 		chdir ("/mnt");
 		if (chroot("/mnt") != 0)
 			return -1;
-		execve(arg[0], argv, env);
+		execve(argv[0], argv, env);
 	}
 	return 0;
 }
@@ -64,7 +64,7 @@ int main(int argc, const char** argv, char** env) {
 	struct stat s;
 	int r, i;
 
-	console = open("/dev/console", 0_WRONLY);
+	console = open("/dev/console", O_WRONLY);
 	dup2(console, 1);
 	
 	
