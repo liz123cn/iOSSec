@@ -1,7 +1,7 @@
 #include <sys/fcntl.h>
 #include <sys/stat.h>
 #include <sys/wait.h>
-#include <sys/mount.h>
+#include "hfs/hfs_mount.h"
 
 #define O_RDONLY 0x0000
 #define O_WRONLY 0x0001
