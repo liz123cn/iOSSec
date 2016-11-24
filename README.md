@@ -50,3 +50,5 @@
 	开始创建源文件，并编译执行。
 
 8、clang用来编译源代码+ldid重新签名+launchd开启守护进程
+
+9、360就是屌！http://bbs.feng.com/read-htm-tid-3979777.html
