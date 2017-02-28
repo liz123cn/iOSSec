@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>464A59D8Y9.com.spider.SpiderSubscriber</string>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.default-data-protection</key>
+	<string>NSFileProtectionComplete</string>
+	<key>com.apple.developer.in-app-payments</key>
+	<array/>
+	<key>com.apple.developer.pass-type-identifiers</key>
+	<array>
+		<string>464A59D8Y9.*</string>
+	</array>
+	<key>com.apple.developer.team-identifier</key>
+	<string>464A59D8Y9</string>
+	<key>get-task-allow</key>
+	<true/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>464A59D8Y9.com.spider.SpiderSubscriber</string>
+	</array>
+</dict>
+</plist>
